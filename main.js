@@ -36,27 +36,46 @@ function isRegisteredUser(str) {
   }
 }
 
-function passwordMatches(s1,s2) {
-  if(s1 === user1) {
-    if(s2 === password1) {
-      return true
-    } else {
-      return false}
-  } else if (s1 === user2) {
-    if(s2 === password2) {
-      return true
-    } else {
-      return false
-    } 
+// function passwordMatches(s1,s2) {
+//   if(s1 === user1) {
+//     if(s2 === password1) {
+//       return true
+//     } else {
+//       return false}
+//   } else if (s1 === user2) {
+//     if(s2 === password2) {
+//       return true
+//     } else {
+//       return false
+//     } 
     
-  } else if ( s1 === user3) {
-    if (s2 === password3) {
-      return true
-    } else {
-      return false
-    }
+//   } else if ( s1 === user3) {
+//     if (s2 === password3) {
+//       return true
+//     } else {
+//       return false
+//     }
+//   }
+// }
+// function passwordMatches(s1,s2) {
+//   if(s1 === user1 && s2 === password1) {
+//     return true
+//   } else if(s1 === user2 && s2 === password2) {
+//     return true
+//   } else if(s1 === user3 && s2 === password3) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+function passwordMatches(s1,s2) {
+  if((s1 === user1 && s2 === password1) || (s1 === user2 && s2 === password2) || (s1 === user3 && s2 === password3)) {
+    return true 
+  } else {
+    return !true
   }
 }
+
 
 
 // Our code below. Do not touch!
